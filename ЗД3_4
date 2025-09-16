@@ -1,0 +1,20 @@
+def calculate_lace_length(a, b, l, N):
+    # Длина между рядами (переходы между рядами)
+    vertical_sections = (N - 1) * a
+    
+    # Длина между дырочками в ряду (горизонтальные участки)
+    horizontal_sections = (N - 1) * b
+    
+    # Общая длина шнурка
+    total_length = 2 * (vertical_sections + horizontal_sections) + l
+    
+    return total_length
+
+# Пример использования:
+a = int(input("Введите расстояние между рядами (a): "))
+b = int(input("Введите расстояние между дырочками в ряду (b): "))
+l = int(input("Введите длину свободного конца шнурка (l): "))
+N = int(input("Введите количество дырочек в каждом ряду (N): "))
+
+lace_length = calculate_lace_length(a, b, l, N)
+print(f"Искомая длина шнурка: {lace_length}")
