@@ -1,0 +1,15 @@
+import math
+
+def find_minimum_of_three(a, b, c):
+    # Находим наименьшее число из трех
+    minimum = min(a, b, c)
+    
+    # Выводим наименьшее число
+    print(f"Наименьшее число: {minimum}")
+
+# Пример использования:
+x = float(input("Введите первое число: "))
+y = float(input("Введите второе число: "))
+z = float(input("Введите третье число: "))
+
+find_minimum_of_three(x, y, z)
