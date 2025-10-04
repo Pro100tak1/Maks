@@ -1,0 +1,20 @@
+def factorial(n):  
+    if n < 0:  
+        return "Ошибка: число должно быть неотрицательным"  
+    result = 1   
+    for i in range(2, n + 1):  
+        result *= i  
+    return result  
+
+while True:
+    try:
+        n = input("Введите натуральное число: ").strip()
+        if not n.isdigit() or n == '0':
+            print("Ошибка: введите натуральное число больше нуля.")
+            continue
+        n = int(n)
+        break
+    except ValueError:
+        print("Ошибка: ввод должен быть числом.")
+
+print(f"{n}! = {factorial(n)}")
