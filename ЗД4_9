@@ -1,0 +1,20 @@
+def fibonacci_sum(n):  
+    if n <= 0:  
+        return 0  
+      
+    # Первые два числа Фибоначчи  
+    a, b = 0, 1  
+    total_sum = a + b  
+      
+    # Генерируем числа Фибоначчи и считаем сумму  
+    for _ in range(2, n):  
+        a, b = b, a + b  
+        total_sum += b  
+          
+    return total_sum  
+  
+# Ввод количества чисел  
+N = int(input("Введите количество чисел Фибоначчи: "))  
+  
+# Вывод результата  
+print(f"Сумма первых {N} чисел Фибоначчи равна: {fibonacci_sum(N)}")
