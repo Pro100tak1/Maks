@@ -1,0 +1,23 @@
+def fibonacci_sum(n, k):  
+    # Первые два числа Фибоначчи  
+    a, b = 0, 1  
+      
+    # Находим число Фибоначчи с номером k  
+    for _ in range(k - 1):  
+        a, b = b, a + b  
+      
+    # Считаем сумму следующих n чисел  
+    total = 0  
+    for _ in range(n):  
+        total += b  
+        a, b = b, a + b  
+      
+    return total  
+  
+# Ввод данных  
+N = int(input("Введите N: "))  
+K = int(input("Введите K: "))  
+  
+# Вывод результата  
+print("Сумма чисел:", fibonacci_sum(N, K))  
+
