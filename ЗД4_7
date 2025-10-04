@@ -1,0 +1,13 @@
+def factorial_sum(n):  
+    total_sum = 0  # общая сумма  
+    current_factorial = 1  # текущее значение факториала  
+      
+    for i in range(1, n + 1):  
+        current_factorial *= i  # вычисляем факториал текущего числа  
+        total_sum += current_factorial  # добавляем к общей сумме  
+      
+    return total_sum  
+  
+# Пример использования:  
+n = int(input("Введите натуральное число n: "))  
+print(f"Сумма факториалов от 1 до {n} равна: {factorial_sum(n)}")  
