@@ -1,0 +1,10 @@
+n = int(input())
+s = 0
+for _ in range(n):
+    while True:
+        try:
+            s += int(input())
+            break
+        except ValueError:
+            print("Пожалуйста, введите корректное целое число.")
+print(s)
