@@ -1,0 +1,8 @@
+a = int(input('Введите значение a (Должно быть больше b):'))
+b = int(input('Введите значение b:'))
+if a>b:
+  for number in range (a, b-1,-1):
+    if number %2 !=0:
+      print(number)
+else:
+  print('Ошибка, a должен быть больше b')
