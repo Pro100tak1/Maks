@@ -1,0 +1,19 @@
+def process_string(s):  
+    max_n = 0  
+    current_n = 0  
+      
+    for char in s:  
+        if char == 'н':  
+            current_n += 1  
+            if current_n > max_n:  
+                max_n = current_n  
+        else:  
+            current_n = 0  
+    modified_string = s.replace('!', '.')  
+      
+    return max_n, modified_string   
+input_string = "Это пример строки с ннн и нннн! Еще н! И нннн!"  
+max_sequence, result_string = process_string(input_string)  
+  
+print(f"Максимальная последовательность 'н': {max_sequence}")  
+print(f"Преобразованная строка: {result_string}")  
