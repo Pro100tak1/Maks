@@ -1,0 +1,32 @@
+#Задание 1
+def task_1():
+    n = int(input("Введите количество элементов в массиве: "))
+    array = []
+    for i in range(n):
+        element = int(input(f"Введите элемент {i+1}: "))
+        array.append(element)
+    max_element = max(array)
+    print(f"Максимальный элемент в массиве: {max_element}")
+    print("Массив в обратном порядке:")
+    for element in reversed(array):
+        print(element, end=' ')
+    print()  
+task_1()
+
+#Задание 2
+def task_2():
+    # Вводим размер массива
+    n = int(input("Введите количество элементов в массиве: "))
+    array = []
+    for i in range(n):
+        element = float(input(f"Введите элемент {i+1}: "))
+        array.append(element)
+    average = sum(array) / n
+    for i in range(n):
+        if array[i] == 0:
+            array[i] = average
+    print("Измененный массив:")
+    for element in array:
+        print(element, end=' ')
+    print() 
+task_2()
