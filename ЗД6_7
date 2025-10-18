@@ -1,0 +1,9 @@
+def replace_p_with_star(s):  
+    mid = len(s) // 2  
+    first_half = s[:mid]  
+    first_half = first_half.replace('п', '*')  
+    result = first_half + s[mid:]  
+    return result  
+input_string = "пример предложения для проверки"  
+output_string = replace_p_with_star(input_string)  
+print(output_string)  
