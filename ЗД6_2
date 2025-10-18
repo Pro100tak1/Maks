@@ -1,0 +1,6 @@
+text = "Пример: строки: с: несколькими: двоеточиями:"   
+count = text.count(':')  
+result = text.replace(':', '%')  
+print("Исходная строка:", text)  
+print("Модифицированная строка:", result)  
+print("Количество замен:", count)  
