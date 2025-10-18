@@ -1,0 +1,11 @@
+def count_word_occurrences(text, word):  
+    text = text.lower()  
+    word = word.lower()  
+    words = text.split()  
+    count = words.count(word)       
+    return count  
+text = "Это пример текста. В этом тексте нужно посчитать слово текст."  
+word_to_find = "текст"  
+  
+count = count_word_occurrences(text, word_to_find)  
+print(f"Слово '{word_to_find}' встречается {count} раз")  
