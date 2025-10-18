@@ -1,0 +1,10 @@
+def find_max_power_of_two(n):  
+    power = 0   
+    result = 1  
+    while result * 2 <= n:  
+        result *= 2  
+        power += 1      
+    return power, result   
+N = int(input("Введите натуральное число N: "))  
+power, value = find_max_power_of_two(N)  
+print(f"Наибольшая степень двойки: {value} (2^{power})")  
