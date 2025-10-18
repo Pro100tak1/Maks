@@ -1,0 +1,6 @@
+text = "Это пример. строки с. точками."  
+count = text.count('.')  
+result = text.replace('.', '')  
+print("Исходная строка:", text)  
+print("Строка после удаления точек:", result)  
+print("Количество удаленных точек:", count)  
