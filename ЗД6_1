@@ -1,0 +1,9 @@
+def count_e_words(text):  
+    text = text.lower()  
+    words = text.split()  
+    count = sum(1 for word in words if word.startswith('е'))       
+    return count   
+text = "Ель растет у ели. Енотик ест ежевику."  
+result = count_e_words(text)  
+print(f"Количество слов на букву 'е': {result}")  
+
