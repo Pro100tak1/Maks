@@ -1,0 +1,27 @@
+def max_repeating_numbers():
+  
+  max_count = 0      
+  current_count = 0   
+  previous_number = None  
+
+  while True:
+    number = int(input("Введите натуральное число (0 для завершения): "))
+
+    if number == 0:
+      break  
+
+    if previous_number is None or number == previous_number:
+      
+      current_count += 1
+    else:
+      
+      max_count = max(max_count, current_count)
+      current_count = 1  
+
+    previous_number = number 
+
+  max_count = max(max_count, current_count)
+
+  print("Наибольшее количество подряд идущих равных элементов:", max_count)
+
+max_repeating_numbers()
