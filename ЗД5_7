@@ -1,0 +1,19 @@
+def count_increasing_elements():
+  
+  count = 0 
+  previous_element = None  
+
+  while True:
+    current_element = int(input("Введите натуральное число (0 для окончания): "))
+
+    if current_element == 0:
+      break 
+
+    if previous_element is not None and current_element > previous_element:
+     
+      count += 1 
+
+    previous_element = current_element 
+
+  print("Количество элементов, которые больше предыдущего:", count)
+count_increasing_elements()
