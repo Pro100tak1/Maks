@@ -1,0 +1,14 @@
+text = input("Введите строку: ")  
+total_chars = len(text)  
+count_replacements = 0  
+new_text = ""  
+for char in text:  
+    if char == 'а':  
+        new_text += 'о'  
+        count_replacements += 1  
+    else:  
+        new_text += char  
+print(f"Исходная строка: {text}")  
+print(f"Измененная строка: {new_text}")  
+print(f"Количество замен: {count_replacements}")  
+print(f"Общее количество символов: {total_chars}")  
