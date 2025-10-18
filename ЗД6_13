@@ -1,0 +1,10 @@
+def get_text_between_brackets(s):  
+    start = s.find('(')  
+    end = s.find(')')  
+    if start != -1 and end != -1 and start < end:   
+        return s[start + 1:end]  
+    else:  
+        return "Скобки не найдены или расположены некорректно"  
+input_string = "Пример текста (выводим этот текст) и продолжение"  
+result = get_text_between_brackets(input_string)  
+print(result) 
