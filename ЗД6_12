@@ -1,0 +1,7 @@
+def find_words_ending_with_ya(text):  
+    words = text.split()  
+    result = [word for word in words if word.endswith('я')]  
+    return result  
+input_text = "Семья любит гулять в лесу. Мария готовит обед. Яблоня цветет"  
+result = find_words_ending_with_ya(input_text)  
+print("Слова, оканчивающиеся на 'я':", result)  
