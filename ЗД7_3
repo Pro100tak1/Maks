@@ -1,0 +1,11 @@
+#Вариант 1
+n = int(input("Введите длину массива n: "))
+D = []
+for i in range(n):
+    D.append(int(input(f"Введите элемент D[{i}]: ")))
+sum_odd = 0
+for i in range(1, n, 2):
+    sum_odd += D[i]
+print("\nМассив D:")
+print(D)
+print(f"\nСумма элементов с нечетными индексами: {sum_odd}")
