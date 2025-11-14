@@ -1,0 +1,3 @@
+#Задача 1
+array = list(map(int, input("Введите массив из 10 целых чисел через пробел: ").split()))
+mean_value = sum(array) / len(array)
