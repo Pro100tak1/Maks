@@ -1,0 +1,14 @@
+#Задача 1
+array = list(map(int, input("Введите массив целых чисел через пробел: ").split()))
+max_element = max(array)
+max_index = array.index(max_element)
+print(f"Максимальный элемент: {max_element}, Порядковый номер: {max_index + 1}")
+
+#Задача 2
+array = list(map(int, input("Введите массив целых чисел через пробел: ").split()))
+odd_numbers = [x for x in array if x % 2 != 0]
+if odd_numbers:
+    odd_numbers.sort(reverse=True)
+    print("Нечетные числа в порядке убывания:", odd_numbers)
+else:
+    print("Нечетных чисел нет.")
